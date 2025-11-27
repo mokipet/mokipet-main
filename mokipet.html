@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XX宠物用品优选店</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background: url("橙黄渐变背景图链接") no-repeat center center; 
+            background-size: cover; 
+            min-height: 100vh; 
+            font-family: "Microsoft YaHei", sans-serif;
+            padding: 20px 0;
+        }
+        /* 容器：统一居中+白色背景+圆角阴影 */
+        .container { 
+            max-width: 450px; 
+            margin: 0 auto; 
+            padding: 0 20px; 
+        }
+        /* 店铺头部：logo+名称+介绍 */
+        .shop-header { 
+            background: #fff; 
+            border-radius: 16px; 
+            padding: 25px 20px; 
+            text-align: center; 
+            margin-bottom: 20px; 
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .shop-logo { 
+            width: 80px; 
+            height: 80px; 
+            border-radius: 50%; 
+            margin-bottom: 15px; 
+            border: 2px solid #ffb800;
+        }
+        .shop-name { 
+            font-size: 24px; 
+            color: #333; 
+            margin-bottom: 8px; 
+            font-weight: 600;
+        }
+        .shop-desc { 
+            font-size: 15px; 
+            color: #666; 
+            line-height: 1.5;
+        }
+        /* 平台跳转区 */
+        .platform-area { 
+            background: #fff; 
+            border-radius: 16px; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .area-title { 
+            font-size: 18px; 
+            color: #333; 
+            margin-bottom: 20px; 
+            padding-left: 10px; 
+            border-left: 4px solid #ff9a00;
+        }
+        .platform-list { display: flex; flex-direction: column; gap: 15px; }
+        .platform-item { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            height: 80px; 
+            background: #f8f8f8; 
+            border-radius: 12px; 
+            cursor: pointer; 
+            transition: all 0.3s;
+        }
+        .platform-item:hover { background: #f0f0f0; transform: scale(1.02); }
+        .platform-logo { width: 50px; height: 50px; margin-right: 15px; }
+        .platform-text { font-size: 18px; color: #333; font-weight: 500; }
+        /* 微信二维码区：双码并排 */
+        .wechat-area { 
+            background: #fff; 
+            border-radius: 16px; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .qrcode-group { display: flex; justify-content: space-around; align-items: center; padding: 10px 0; }
+        .qrcode-item { text-align: center; }
+        .qrcode-img { width: 140px; height: 140px; border-radius: 8px; }
+        .qrcode-text { 
+            font-size: 14px; 
+            color: #666; 
+            margin-top: 10px; 
+            white-space: nowrap;
+        }
+        /* 底部提示 */
+        .footer-tip { 
+            text-align: center; 
+            font-size: 14px; 
+            color: #fff; 
+            background: rgba(0,0,0,0.2); 
+            padding: 12px; 
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 店铺头部 -->
+        <div class="shop-header">
+            < img src="你的店铺logo链接" class="shop-logo" alt="店铺logo">
+            <h1 class="shop-name">XX宠物用品优选店</h1>
+            <p class="shop-desc">正品保障·极速配送·宠主优选<br>多平台同步运营，任选其一直达店铺</p >
+        </div>
+
+        <!-- 平台跳转区 -->
+        <div class="platform-area">
+            <h2 class="area-title">选择平台进入店铺</h2>
+            <div class="platform-list">
+                <a href=" " class="platform-item" target="_blank">
+                    < img src="京东logo链接" class="platform-logo" alt="京东">
+                    <span class="platform-text">京东宠物用品店</span>
+                </a >
+                <a href="饿了么店铺链接" class="platform-item" target="_blank">
+                    < img src="饿了么logo链接" class="platform-logo" alt="饿了么">
+                    <span class="platform-text">饿了么宠物速达店</span>
+                </a >
+                <a href="美团店铺链接" class="platform-item" target="_blank">
+                    < img src="美团logo链接" class="platform-logo" alt="美团">
+                    <span class="platform-text">美团宠物优选店</span>
+                </a >
+            </div>
+        </div>
+
+        <!-- 微信二维码区 -->
+        <div class="wechat-area">
+            <h2 class="area-title">微信专属福利通道</h2>
+            <div class="qrcode-group">
+                <div class="qrcode-item">
+                    < img src="个人微信二维码链接" class="qrcode-img" alt="个人微信">
+                    <p class="qrcode-text">添加微信享专属优惠</p >
+                </div>
+                <div class="qrcode-item">
+                    < img src="微信群二维码链接" class="qrcode-img" alt="宠主交流群">
+                    <p class="qrcode-text">宠主交流群·福利同步</p >
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部提示 -->
+        <div class="footer-tip">
+            如有问题可添加微信咨询，所有平台售后统一保障
+        </div>
+    </div>
+</body>
+</html>
